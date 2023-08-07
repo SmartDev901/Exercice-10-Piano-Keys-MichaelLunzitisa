@@ -34,18 +34,27 @@ let lastLyric = document.getElementById('column-optional');
 
 // These statements are "hiding" all the progress buttons, but the first one
 nextTwo.hidden = true;
-nextThree.hidden = true;
+nextOne.hidden = true;
 startOver.hidden = true;
 
 // Write anonymous event handler property and function for the first progress button
 
-
+nextOne.addEventListener('click', ()=>{
+  nextTwo.hidden = false;
+  nextOne.hidden = true;
+})
 // Write anonymous event handler property and function for the second progress button
 
-
+nextTwo.addEventListener('click', ()=>{
+  nextThree.hidden = false;
+  nextTwo.hidden = true;
+})
 // Write anonymous event handler property and function for the third progress button
 
-
+nextThree.addEventListener('click', ()=>{
+  nextThree.hidden = false;
+  nextTwo.hidden = true;
+})
 // This is the event handler property and function for the startOver button
 startOver.onclick = function() {
   nextOne.hidden = false;
@@ -59,7 +68,7 @@ startOver.onclick = function() {
   document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('letter-note-four').innerHTML = 'G';
   document.getElementById('word-five').innerHTML = 'TO';
-  document.getElementById('letter-note-five').innerHTML = 'C';
+  document.getElementById('letter-note-five').innerHTML = 'D';
   document.getElementById('word-six').innerHTML = 'YOU!';
-  document.getElementById('letter-note-six').innerHTML = 'B';
+  document.getElementById('letter-note-six').innerHTML = 'C';
 }
