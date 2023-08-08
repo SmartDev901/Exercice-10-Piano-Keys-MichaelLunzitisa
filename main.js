@@ -40,7 +40,9 @@ startOver.hidden = true;
 // Write anonymous event handler property and function for the first progress button
 
 nextOne.addEventListener('click', ()=>{
+  // Révéler le bouton nextTwo
   nextTwo.hidden = false;
+  // Masquer le bouton nextOne
   nextOne.hidden = true;
   document.getElementById('letter-note-five').innerHTML = 'D';
   document.getElementById('letter-note-six').innerHTML = 'C';
@@ -48,7 +50,9 @@ nextOne.addEventListener('click', ()=>{
 // Write anonymous event handler property and function for the second progress button
 
 nextTwo.addEventListener('click', ()=>{
+  // Révéler le bouton nextThree
   nextThree.hidden = false;
+  // Masquer le bouton nextTwo
   nextTwo.hidden = true;
   document.getElementById('word-five').innerHTML = 'DEAR';
   document.getElementById('word-six').innerHTML = 'FRI-!';
@@ -71,7 +75,6 @@ nextThree.addEventListener('click', ()=>{
   document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('word-five').innerHTML = 'TO';
   document.getElementById('word-six').innerHTML = 'YOU';
-
 
   document.getElementById('letter-note-one').innerHTML = 'F';
   document.getElementById('letter-note-two').innerHTML = 'F';
